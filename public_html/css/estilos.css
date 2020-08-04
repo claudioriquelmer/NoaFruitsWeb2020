@@ -34,6 +34,7 @@ header {
     position: absolute;
     width: 100%;
     height: 0;
+    display: none;
 }
 
 .navegator nav ul {
@@ -56,6 +57,9 @@ header {
     font-size: 30px;
 }
 /*Social Bar*/
+.contenedor-barra {
+    display: none;
+}
 .social-bar {
     position: fixed;
     right: 0;
@@ -65,13 +69,9 @@ header {
     flex-direction: column;
     align-items: flex-end;
     z-index: 100;
+
 }
-/*.social-bar {
-    position: fixed;
-    right: 0;
-    top: 35%;
-    z-index: 100;
-}*/
+
 
 #facebook a {
     background: #3b5998;
@@ -117,15 +117,26 @@ header {
     border-radius: 10px 0 0 10px;
 }
 
-/*.icon {
-    background-color: white;
-    text-decoration: none;
-    padding: .7rem;
-    display: flex;
-    transition: all .5s;
-}*/
 /*Header Logo Título*/
 .contenedor-titulo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-titulo h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    padding: 50px 40px;
+    font-family: 'megrim';
+    background-color: black;
+    width: 40%;
+    border-radius: 10px;
+}
+/*.contenedor-titulo {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -139,7 +150,7 @@ header {
     margin: auto;
     padding: 200px 80px;
 }
-
+*/
 .container h5 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -168,7 +179,12 @@ header {
     padding-top: 15px;
 }
 
+.media h5 {
+    display: none;
+}
+
 .contacto-texto h5 {
+    text-align: center;
     color: #fff;
 }
 
@@ -185,6 +201,55 @@ footer {
 
 footer p {
     color: black;
+}
+/*Tamaños Dispositivos*/
+@media screen and (min-width:769px) {
+    .navegator nav {
+        display: inline;
+    }
+    .contenedor-barra {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width:768px) and (min-width:481px) {
+    .navegator nav {
+        display: inline;
+    }
+    .contenedor-barra {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width:480px) and (min-width:0px) {
+    .contenedor-titulo h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        padding: 25px 20px;
+        font-family: 'megrim';
+        background-color: black;
+        width: auto;
+        border-radius: 10px;
+    }
+    .media h5 {
+        display: inline;
+    }
+    .contacto-texto h3 {
+        font-size: 16px;
+        color: #fff;
+        padding-top: auto;
+    }
+    .contacto-texto h5 {
+        font-size: 16px;
+        padding-top: auto;
+    }
+    .footer {
+        height: auto;
+        padding-top: auto;
+    }
 }
 
 
