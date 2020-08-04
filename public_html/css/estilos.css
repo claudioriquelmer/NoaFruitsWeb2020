@@ -1,0 +1,195 @@
+/* 
+    Created on : 2 jul. 2020, 17:47:42
+    Author     : Claudio Nicolas
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background: linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.2),
+        rgba(0,0,0,.6)),
+        url("../img/header2.JPG");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+/*Menú navegación*/
+.navegator nav {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 0;
+}
+
+.navegator nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.navegator nav ul li {
+    padding: 40px;
+    transition: all .3s ease;
+}
+
+.navegator nav ul li:hover {
+    transform: scale(1.1);
+}
+.navegator nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+/*Social Bar*/
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+/*.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    z-index: 100;
+}*/
+
+#facebook a {
+    background: #3b5998;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    width: 70px;
+    border-radius: 10px 0 0 0;
+    transition: all .4s ease;
+}
+
+#facebook a:hover {
+    padding: 15px 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+#instagram a {
+    background: #125688;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    width: 70px;
+    transition: all .4s ease;
+}
+
+#instagram a:hover {
+    padding: 15px 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+#whatsapp a {
+    background: #4dc247;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    width: 70px;
+    transition: all .4s ease;
+    border-radius: 0 0 0 10px;
+}
+
+#whatsapp a:hover {
+    padding: 15px 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+/*.icon {
+    background-color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}*/
+/*Header Logo Título*/
+.contenedor-titulo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo img {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: 200px 80px;
+}
+
+.container h5 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+}
+/*Contacto*/
+.contacto {
+    background: url("../img/header.JPG");
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+.contacto-texto {
+    text-align: center;
+}
+
+.contacto-texto h3 {
+    font-size: 32px;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.contacto-texto h5 {
+    color: #fff;
+}
+
+.contacto-texto h5 a {
+    color: #fff;
+}
+/*Footer*/
+footer {
+    height: 50px;
+    background: #2E3555;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer p {
+    color: black;
+}
+
+
+
+
+
+
+
