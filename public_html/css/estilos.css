@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: black;
 }
 
 header {
@@ -46,6 +46,8 @@ header {
 .navegator nav ul li {
     padding: 40px;
     transition: all .3s ease;
+    font-family: 'Megrim' , sans-serif;
+    font-weight: bold;
 }
 
 .navegator nav ul li:hover {
@@ -126,38 +128,24 @@ header {
 
 }
 
-.contenedor-titulo h1 {
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    padding: 50px 40px;
-    font-family: 'megrim';
-    background-color: black;
-    width: 40%;
-    border-radius: 10px;
-}
-/*.contenedor-titulo {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contenedor-titulo img {
-    width: 40%;
+    width: 45%;
     background-size: cover;
     background-position: center;
     margin: auto;
     padding: 200px 80px;
 }
-*/
+
 .container h5 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Megrim', sans-serif;
+    color: #fff
 }
 
 .container h3 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Megrim', sans-serif;
     text-align: center;
+    font-weight: bold;
+    color: white;
 }
 /*Contacto*/
 .contacto {
@@ -224,15 +212,12 @@ footer p {
 }
 
 @media screen and (max-width:480px) and (min-width:0px) {
-    .contenedor-titulo h1 {
-        text-align: center;
-        font-size: 40px;
-        color: #fff;
-        padding: 25px 20px;
-        font-family: 'megrim';
-        background-color: black;
-        width: auto;
-        border-radius: 10px;
+    .contenedor-titulo img {
+        width: 80%;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        padding: 100px 20px;
     }
     .media h5 {
         display: inline;
