@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #fff;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
         rgba(0,0,0,.6),
         rgba(0,0,0,.2),
         rgba(0,0,0,.6)),
-        url("../img/header2.JPG");
+        url("../img/Fondox.jpeg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -137,8 +137,8 @@ header {
 }
 
 .container h5 {
-    font-family: 'Megrim', sans-serif;
-    color: #fff
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
 }
 
 .container h3 {
@@ -149,7 +149,7 @@ header {
 }
 /*Contacto*/
 .contacto {
-    background: url("../img/header.JPG");
+    background: url("../img/imgContacto.JPG");
     width: 100%;
     height: 300px;
     background-position: center;
