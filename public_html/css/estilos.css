@@ -17,11 +17,14 @@ header {
         rgba(0,0,0,.6),
         rgba(0,0,0,.2),
         rgba(0,0,0,.6)),
-        url("../img/header2.jpg");
+        url("../img/Portada.JPG");
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    -webkit-filter: brightness(180%);
+    filter: brightness(180%);
+
 }
 
 .contenedor {
@@ -35,6 +38,7 @@ header {
     width: 100%;
     height: 0;
     display: none;
+    z-index: 100;
 }
 
 .navegator nav ul {
@@ -57,11 +61,9 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 30px;
+    display: block;
 }
 /*Social Bar*/
-.contenedor-barra {
-    display: none;
-}
 .social-bar {
     position: fixed;
     right: 0;
@@ -73,7 +75,6 @@ header {
     z-index: 100;
 
 }
-
 
 #facebook a {
     background: #3b5998;
@@ -125,20 +126,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.contenedor-titulo img {
-    width: 45%;
+.img {
+    background: url("../img/NoaFruitsLogo.jpeg");
     background-size: cover;
     background-position: center;
     margin: auto;
-    padding: 200px 80px;
+    padding: 150px 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container h5 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .container h3 {
@@ -174,74 +178,118 @@ header {
     padding-top: 15px;
 }
 
-.media h5 {
-    display: none;
-}
-
 .contacto-texto h5 {
     text-align: center;
     color: #fff;
 }
 
 .contacto-texto h5 a {
-    color: #fff;
+    color: #7fffd4;
 }
 /*Footer*/
 footer {
     height: 50px;
-    background: #2E3555;
+    background: black;
     text-align: center;
     padding-top: 15px;
 }
 
 footer p {
-    color: black;
+    color: #fff;
 }
 /*Tamaños Dispositivos*/
 @media screen and (min-width:769px) {
     .navegator nav {
         display: inline;
     }
-    .contenedor-barra {
-        display: inline;
-    }
-
 }
 
 @media screen and (max-width:768px) and (min-width:481px) {
     .navegator nav {
         display: inline;
     }
-    .contenedor-barra {
-        display: inline;
-    }
-
 }
 
 @media screen and (max-width:480px) and (min-width:0px) {
-    .contenedor-titulo img {
-        width: 80%;
+    .img {
+        background: url("../img/NoaFruitsLogo.jpeg");
         background-size: cover;
         background-position: center;
         margin: auto;
-        padding: 100px 20px;
+        padding: 80px;
+        left: -ms- 50%;
     }
-    .media h5 {
-        display: inline;
-    }
+
     .contacto-texto h3 {
-        font-size: 16px;
+        font-size: 30px;
         color: #fff;
         padding-top: auto;
     }
     .contacto-texto h5 {
-        font-size: 16px;
+        font-size: 23px;
         padding-top: auto;
     }
     .footer {
         height: auto;
         padding-top: auto;
+        margin: auto;
+        text-align: center;
     }
+    .social-bar {
+        position: fixed;
+        right: 0;
+        top: 75%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    }
+
+    #facebook a {
+        background: #3b5998;
+        padding: 10px 23px;
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        border-radius: 10px 0 0 0;
+        transition: all .4s ease;
+    }
+
+    #facebook a:hover {
+        padding: 9px 30px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #instagram a {
+        background: #125688;
+        padding: 10px 23px;
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        transition: all .4s ease;
+    }
+
+    #instagram a:hover {
+        padding: 9px 30px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #whatsapp a {
+        background: #4dc247;
+        padding: 10px 23px;
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        transition: all .4s ease;
+        border-radius: 0 0 0 10px;
+    }
+
+    #whatsapp a:hover {
+        padding: 9px 30px;
+        border-radius: 10px 0 0 10px;
+    }
+
 }
 
 
